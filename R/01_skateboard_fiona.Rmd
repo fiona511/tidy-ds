@@ -9,7 +9,7 @@ author: Fiona
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "###")
 ```
 
 
@@ -86,8 +86,8 @@ You will now visualise the data with ggplot2. This is how it works:
 * Create a boxplot of `lifeExp` for each `continent` (`?geom_boxplot()`).
 
 ```{r boxplot-1, eval = FALSE}
-ggplot(data = _________, aes(x = _________, y = _______)) +
-  geom________()
+ggplot(data = gapminder, aes(x = continent, y = lifeExp)) +
+  geom_boxplot()
 ```
 
 ```{r boxplot-2, echo = FALSE}
