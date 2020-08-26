@@ -1,6 +1,7 @@
 ---
 title: Skateboard
 output: github_document
+author: Fiona
 ---
 
 **Collapse all chunks with Alt+O / Cmd+Option+O**
@@ -16,8 +17,8 @@ knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
 * Use the packages tidyverse and here.
 
 ```{r packages-1, eval = FALSE}
-library(_________)
-_______(here)
+library(tidyverse)
+library(here)
 ```
 
 ```{r packages-2, echo = FALSE}
@@ -31,7 +32,7 @@ You are about to read data but this code fails. The path is unsafe,  fix it:
 * Experiment with "Knit > Knit Directory".
 
 ```{r test-here, error=TRUE}
-read_csv("data/gapminder.csv")
+read_csv("../data/gapminder.csv")
 ```
 
 
